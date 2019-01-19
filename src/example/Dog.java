@@ -1,6 +1,17 @@
 package example;
 
+import java.util.Objects;
+
 public class Dog extends Animal {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Dog)) return false;
+        Dog dog = (Dog) o;
+        return age == dog.age;
+    }
+
+    public int age = 20;
     public Dog(){
         super(20);
     }

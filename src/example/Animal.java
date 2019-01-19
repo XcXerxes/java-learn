@@ -1,6 +1,14 @@
 package example;
 
 public class Animal {
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "age=" + age +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
     public int age = 20;
     public String name;
 
