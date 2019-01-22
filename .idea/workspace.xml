@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78fdd3c1-103c-415b-9494-1e04087220f6" name="Default Changelist" comment="java 学习">
-      <change afterPath="$PROJECT_DIR$/src/ballgame/BallGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/learn/TestConstant01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/learn/TestRecursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/learn/TestStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/learn/内存分析.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-learn/com/porkgame/InitPlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-learn/com/porkgame/InitPlay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-learn/com/porkgame/Pork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-learn/com/porkgame/Pork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learn/内存分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/learn/内存分析.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/learn/内存分析.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+              <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -394,7 +387,7 @@
     <frame x="537" y="144" width="1399" height="847" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19528371" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19528371" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -403,7 +396,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40397352" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40397352" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -411,7 +404,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329429" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32847682" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -895,7 +888,7 @@
     <entry file="file://$PROJECT_DIR$/src/learn/内存分析.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
