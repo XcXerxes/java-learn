@@ -31,6 +31,12 @@ public class TestRecursion {
     static void b() {
         System.out.println("b");
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
     public static void main(String[] args) {
         a();
         // 开始时间
