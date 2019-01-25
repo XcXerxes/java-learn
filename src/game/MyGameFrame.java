@@ -19,13 +19,16 @@ public class MyGameFrame extends JFrame {
     int planeX = 250;
     int planeY = 250;
     Plane pl = new Plane(plane, 250, 250, 50, 50);
+    Shell shell = new Shell();
+
+    Shell[] shells = new Shell[50];
 
     /**
      * 初始化 加载窗口
      */
     public void launchFrame() {
         this.setTitle("飞机游戏");
-        this.setSize(500, 500);
+        this.setSize(Constant.GAME_WIDTH, Constant.GAME_HEIGHT);
         this.setLocation(300, 300);
         this.setVisible(true);
         this.addWindowListener(new WindowAdapter() {
@@ -37,6 +40,24 @@ public class MyGameFrame extends JFrame {
         // 启动重画窗口的线程
         new PaintThread().start();
         addKeyListener(new KeyMonitor());
+        launchShell();
+    }
+
+    /**
+     * 生成炮弹
+     */
+    public void launchShell() {
+        for (int i = 0; i < 50; i++) {
+            shells[i] = new Shell();
+        }
+    }
+    /**
+     * 画出炮弹
+     */
+    public void drawShell(Graphics g) {
+        for (int i = 0; i < shells.length; i++) {
+            shells[i].draw(g);
+        }
     }
 
     /**
@@ -55,8 +76,18 @@ public class MyGameFrame extends JFrame {
 //        g.drawImage(bg, 0, 0, 500, 500, null);
 //        g.drawImage(plane, planeX, planeY,60,60, null);
 //        planeX++;
-        g.drawImage(bg, 0, 0, 500, 500, null);
+        g.drawImage(bg, 0, 0, Constant.GAME_WIDTH, Constant.GAME_HEIGHT, null);
         pl.drawSelf(g);
+        // shell.draw(g);
+        for (int i = 0; i < shells.length; i++) {
+            shells[i].draw(g);
+
+            boolean peng = shells[i].getRect().intersects(pl.getRect());
+            if (peng) {
+                System.out.println("撞机了.....");
+                pl.live = false;
+            }
+        }
 
     }
 

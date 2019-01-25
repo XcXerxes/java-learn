@@ -9,6 +9,7 @@ public class Plane extends GameObject {
     boolean up;
     boolean down;
     int speed = 10;
+    boolean live = true;
     public Plane(Image img, int x, int y, int width, int height) {
         this.img = img;
         this.x = x;
@@ -19,19 +20,24 @@ public class Plane extends GameObject {
 
     @Override
     public void drawSelf(Graphics g) {
-        g.drawImage(img, (int)x, (int)y, width, height, null);
-        if(left) {
-            x -=speed;
+        if (live) {
+            g.drawImage(img, (int)x, (int)y, width, height, null);
+            if(left) {
+                x -=speed;
+            }
+            if (right){
+                x += speed;
+            }
+            if (up) {
+                y -= speed;
+            }
+            if(down) {
+                y += speed;
+            }
+        } else  {
+
         }
-        if (right){
-            x += speed;
-        }
-        if (up) {
-            y -= speed;
-        }
-        if(down) {
-            y += speed;
-        }
+
     }
 
     /**
