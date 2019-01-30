@@ -1,11 +1,13 @@
 package src.src.learn.collection;
 
-public class LinkedNode {
-    private Object previous;
-    private Object obj;
-    private Object next;
+import org.w3c.dom.Node;
 
-    public LinkedNode(Object previous, Object obj, Object next) {
+public class LinkedNode {
+    private Node previous;
+    private Object obj;
+    private Node next;
+
+    public LinkedNode(Node previous, Object obj, Node next) {
         this.previous = previous;
         this.obj = obj;
         this.next = next;
@@ -14,11 +16,11 @@ public class LinkedNode {
 
     }
 
-    public Object getPrevious() {
+    public Node getPrevious() {
         return previous;
     }
 
-    public void setPrevious(Object previous) {
+    public void setPrevious(Node previous) {
         this.previous = previous;
     }
 
@@ -30,11 +32,11 @@ public class LinkedNode {
         this.obj = obj;
     }
 
-    public Object getNext() {
+    public Node getNext() {
         return next;
     }
 
-    public void setNext(Object next) {
+    public void setNext(Node next) {
         this.next = next;
     }
 }
